@@ -72,14 +72,15 @@ function decrementClaim() {
     if (currentClaim > 1) {
         let newClaim = currentClaim - 1;
         $("#number-to-mint").text(newClaim);
+        updatePrice();
     }
 }
 
-function updatePrice() {
+const updatePrice = async() => {
     let currentClaim = Number($("#number-to-mint").text());
     let minted = Number(await birds.totalSupply());
     if (minted >= 1000) {
-        $("#current-cost").text(`${(priceEth * currentClaim).toFixed(4)} Ξ`)
+        $("#current-cost").text(`${(priceEth * currentClaim).toFixed(4)} Ξ`);
     }
     else {
         $("#current-cost").text("FREE");
@@ -92,18 +93,14 @@ function incrementClaim() {
     if (currentClaim != max) {
         let newClaim = currentClaim + 1;
         $("#number-to-mint").text(newClaim);
+        updatePrice();
     }
 }
 
 const setMaxMint = async() => {
     $("#number-to-mint").text(MAX_MINT);
     let minted = Number(await birds.totalSupply());
-    if (minted >= 1000) {
-        $("#current-cost").text(`${(priceEth * MAX_MINT).toFixed(4)} Ξ`)
-    }
-    else {
-        $("#current-cost").text("FREE");
-    }
+    updatePrice();
 }
 
 const isPublic = async() => {
