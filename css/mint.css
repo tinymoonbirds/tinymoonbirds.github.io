@@ -73,7 +73,7 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    height: 85%;
+    /* height: 85%; */
 }
 
 #mint {
@@ -196,7 +196,7 @@
     }
     
     #max-button {
-        min-height: 10vh;
+        min-height: 8vh;
         min-width: 75%;
     }
 
