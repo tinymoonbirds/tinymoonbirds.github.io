@@ -13,8 +13,8 @@ const MAX_MINT = 10;
 const MAX_SUPPLY = 4444;
 const priceWei = "2500000000000000";
 const priceEth = .0025
-const openseaLink = "#";
-const looksrareLink = "#";
+const openseaLink = "https://opensea.io/collection/tinybirdsofficial";
+const looksrareLink = "https://looksrare.org/collections/0xE8e5b486316C78469255681671b6A130D65E3578";
 
 /*********************************************************************************/
 /********************************DEV CONFIG********************************/
