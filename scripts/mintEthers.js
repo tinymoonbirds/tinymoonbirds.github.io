@@ -133,7 +133,7 @@ const mint = async() => {
     try {
         if (publicLive) {
             if (minted == MAX_SUPPLY) {
-                await displayErrorMessage("Sorry, no Tiny Moonbirds remaining!")
+                await displayErrorMessage("Sorry, no Tiny MoonBirds remaining!")
             }
             else {
                 if (numberToMint > MAX_MINT) {
