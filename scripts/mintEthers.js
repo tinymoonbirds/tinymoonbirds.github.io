@@ -10,7 +10,7 @@ const birdsAbi = () => {
 const etherscanBase = `https://etherscan.io/tx/`;
 const correctChain = 1;
 const MAX_MINT = 10;
-const MAX_SUPPLY = 4444;
+const MAX_SUPPLY = 1146;
 const priceWei = "2500000000000000";
 const priceEth = .0025
 const openseaLink = "https://opensea.io/collection/tinybirdsofficial";
